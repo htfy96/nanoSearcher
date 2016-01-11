@@ -1,0 +1,219 @@
+﻿$def with()
+<html>
+        <head>
+                <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />
+                <title>Surf</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <link rel="stylesheet" href="static/amazeui.css" type="text/css" />
+                <script src="static/jquery-2.1.4.min.js"> </script>
+                <script type="text/javascript" src="static/amazeui.js"></script>
+                <style type="text/css">
+                        body
+                        {
+                                width: 100%;
+                                height: 100%;
+                                background-image: url(static/winter_02r.jpg);
+                                background-attachment: fixed;
+                                background-size: cover;
+                        }
+                        div.wrapper
+                        {
+                                position: relative;
+                                top: 20%;
+                        }
+                        div.lg
+                        {
+                                text-align: center;
+                                bottom: 15px;
+                        }
+                        form.form2_set
+                        {
+                                text-align: center;
+                                margin-top: 20px;
+                        }
+                        div.clear
+                        {
+                                font-size: 0;
+                                letter-spacing: -4px;
+                                word-spacing: -4px;
+                        }
+                        div.clear>*
+                        {
+                                font-size: normal;
+                                letter-spacing: 0;
+                                word-spacing: 0;
+                        }
+                        input.input_text_set
+                        {
+                                width: 537px;
+                                height: 40px;
+                                border: 1px solid #d8d8d8;
+                                margin: 0;
+                                padding: 0;
+                                font: 16px arial;
+                                outline: none;
+                                opacity: 0.8;
+                        }
+                        input.input_text_set: hover
+                        {
+                                border: 1px solid #b3b3b3;
+                        }
+                        input.input_text_set: focus
+                        {
+                                border: 2px solid #0F97FF;
+                        }
+                        input.input_btn_set
+                        {
+                                cursor: pointer;
+                                width: 102px;
+                                height: 40px;
+                                padding: 0;
+                                margin: 0;
+                                border: 0;
+                                background-color:#0F97FF;
+                                font: 16px arial;
+                                color:#FFFFFF;
+                        }
+                        img.camera
+                        {
+                                height: 40px;
+                                width: 40px;
+                                cursor: pointer;
+                        }
+                        div.foot_wrapper
+                        {
+                                width: 100%;
+                                position: absolute;
+                                bottom: 1%;
+                                height: 40px;
+                        }
+                        div.foot
+                        {
+                                padding-top: 15px;
+                                font-size: 16px;
+                                text-align: center;
+                                vertical-align: bottom;
+                        }
+                        img.switch
+                        {
+                                position: absolute;
+                                right: 70px;
+                                width: 40px;
+                                height: 40px;
+                                opacity: 0.7;
+                                cursor: pointer;
+                        }
+                        img.switch: hover
+                        {
+                                opacity: 1.0;
+                        }
+                        img.information
+                        {
+                                position: absolute;
+                                right: 15px;
+                                width: 40px;
+                                height: 40px;
+                                opacity: 0.7;
+                                cursor: pointer;
+                        }
+                        img.information: hover
+                        {
+                                opacity: 1.0;
+                        }
+                        form.form1_set
+                        {
+                                text-align: center;
+                        }
+                        input.input_upload_set
+                        {
+                                position: absolute;
+                                left: 20%;
+                        }
+                        input.input_upload_btn_set
+                        {
+                                position: absolute;
+                                bottom: 10%;
+                                left: 42%;
+                                background-color: #0F97FF;
+                                border: 0;
+                                height: 30px;
+                                width: 60px;
+                        }
+                </style>
+                <script language="javascript">
+                        function change(){
+                                switch(Math.floor(Math.random()*(7+1))){
+                                 case 0:
+                                 if(document.body.style.backgroundImage.indexOf("spring_01r.jpg") != -1) {change();}
+                                 else {document.body.style.backgroundImage="url(static/spring_01r.jpg)";}
+                                 break;
+                                 case 1:
+                                 if(document.body.style.backgroundImage.indexOf("spring_02r.jpg") != -1) {change();}
+                                 else {document.body.style.backgroundImage="url(static/spring_02r.jpg)";}
+                                 break;
+                                 case 2:
+                                 if(document.body.style.backgroundImage.indexOf("summer_01r.jpg") != -1) {change();}
+                                 else {document.body.style.backgroundImage="url(static/summer_01r.jpg)";}
+                                 break;
+                                 case 3:
+                                 if(document.body.style.backgroundImage.indexOf("summer_02r.jpg") != -1) {change();}
+                                 else {document.body.style.backgroundImage="url(static/summer_02r.jpg)";}
+                                 break;
+                                 case 4:
+                                 if(document.body.style.backgroundImage.indexOf("fall_01r.jpg") != -1) {change();}
+                                 else {document.body.style.backgroundImage="url(static/fall_01r.jpg)";}
+                                 break;
+                                 case 5:
+                                 if(document.body.style.backgroundImage.indexOf("fall_02r.jpg") != -1) {change();}
+                                 else {document.body.style.backgroundImage="url(static/fall_02r.jpg)";}
+                                 break;
+                                 case 6:
+                                 if(document.body.style.backgroundImage.indexOf("winter_01r.jpg") != -1) {change();}
+                                 else {document.body.style.backgroundImage="url(static/winter_01r.jpg)";}
+                                 break;
+                                 case 7:
+                                 if(document.body.style.backgroundImage.indexOf("winter_02r.jpg") != -1) {change();}
+                                 else {document.body.style.backgroundImage="url(static/winter_02r.jpg)";}
+                                 break;
+                                }
+                                document.body.style.backgroundAttachment="fixed";
+                                document.body.style.backgroundSize="cover";
+                        }
+                </script>
+        </head>
+
+        <body>
+                <div class = "wrapper">
+                        <div class = "lg"><img src = "static/surf.png" width = "270" height = "130" /></div>
+
+                        <div class = "clear">
+                                <form class="form2_set" name="input" action="/i" method="GET">
+                                        <img id="camera" class="camera" src="static/camera.png" type="button" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 400, height: 225}">
+                                        <input class="input_text_set" type="text" name="keyword">
+                                        <input class="input_btn_set"type="submit" value="Search">
+                                </form>
+                        </div>
+                </div>
+
+                <div class = "foot_wrapper">
+                        <img class = "switch" src="static/refresh.png" onclick="change()" />
+                        <img class = "information" src="static/information.png" data-am-popover="{content: 'Developer: 骆铮 瞿文浩 宋肇哲 张福明', trigger: 'hover focus'}">
+                        <div class = "foot">2015~2016 Surf</div>
+                </div>
+
+                <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+                        <div class="am-modal-dialog">
+                                <div class="am-modal-hd">搜索从本地上传的图片
+                                        <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                                </div>
+                                <div class="am-modal-bd">
+                                        <form  class="form1_set" name="input" action="/i" enctype="multipart/form-data" method="POST">
+                                                <input class="input_upload_set" type="file" name="query"></input>
+                                                <input class="input_upload_btn_set" type="submit" value="提交"></input>
+                                        </form>
+                                </div>
+                        </div>
+                </div>
+
+        </body>
+</html>

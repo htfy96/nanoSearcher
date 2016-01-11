@@ -1,0 +1,8 @@
+spring_01	itimes.com
+spring_02	hdwallpapers.in
+summer_01	fotonin.com
+summer_02	hercampus.com
+fall_01		eskipaper.com
+fall_02		pinimg.com
+winter_01	co.midland.mi.us
+winter_02	7-themes.com

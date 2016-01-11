@@ -1,0 +1,5 @@
+*.swp
+*/*.swp
+backend/contentSearcher/IndexFiles.index
+*.pyc
+*/*.pyc

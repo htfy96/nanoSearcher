@@ -1,0 +1,89 @@
+﻿$def with()
+<html>
+<head>
+<link rel="shortcut icon" href="static/dog_title.ico" type="image/x-icon" />
+<title>神烦搜索</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="static/amazeui.min.css" type="text/css" />
+<style type="text/css">
+body{
+	width:100%;
+}
+input.ipt{
+	height:32px;
+	border:1px solid;
+	outline:medium;
+	border-color:#BEBEBE #0072E3 #BEBEBE #BEBEBE;
+	width:100%;
+	min-width:510px;
+	padding: 3px 0 3px 5px;
+	-webkit-appearance: none;
+}
+.forip{
+	vertical-align:bottom;
+	height:32px;
+	width:63.75%;
+	min-width:510px;
+}
+button.btn{
+	height:32px;
+	border:1px solid #0072E3;
+	background-color:#0072E3;
+	outline:medium;
+	color:#FFFFFF;
+	width:100%;
+	min-width:90px;
+}
+.forbt{
+	vertical-align:bottom;
+	height:32px;
+	width:11.25%;
+	min-width:90px;
+}
+table.fm{
+	margin: auto;
+	width:60%;
+	table-layout:fixed;
+	min-width: 600px;
+}
+div.s_form{
+	position:relative;
+	top:20%;
+}
+#lg{
+	text-align:center;
+	bottom:15px;
+}
+#form {
+    margin: 22px auto 0;
+    width: 641px;
+    text-align: left;
+    z-index: 100;
+
+}
+</style>
+</head>
+
+<body>
+<div class = "s_form">
+<div id="lg"><img src = "static/dog2.jpg" width = "240" height = "220"></div>
+
+<form id = "form" action = "/s" method="GET">
+	<table class = "fm">
+	<tr>
+	<td class = "forip">
+		<input class = "ipt" type = "text" id = "search" name = "keyword">
+	</td>
+	<td class = "forbt">
+		<button class = "btn" id = "Search" name = "Search">烦一下？</button>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<b>烦网页</b> <a href='/im'>烦图片</a>
+	</td>
+	</tr>
+	</table>
+</form>
+</div>
+</body>
