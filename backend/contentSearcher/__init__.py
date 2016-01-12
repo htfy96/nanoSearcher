@@ -1,0 +1,2 @@
+import lucene
+lucene.initVM()
